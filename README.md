@@ -3,7 +3,7 @@ Metropolia University of applied sciences, health and medical technology, web ap
 
 Contributors are:
 
-Darjara86 = Darja Raevaara
-Aapoka = Aapo Kaitila
-Costama95 = Jonathan Costa
+Darjara86 = Darja Raevaara,
+Aapoka = Aapo Kaitila,
+Costama95 = Jonathan Costa,
 Antongibbi = Anton Girgis
