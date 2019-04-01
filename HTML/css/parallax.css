@@ -36,6 +36,9 @@ body, html {
 .w3-hover-opacity {
 	cursor: pointer;
 }
+.w3-top {
+	color: #E1CCCC;
+}
 /*PAINSLIDER STARTS*/
 .slidecontainer {
   width: 100%; /* Width of the outside container */
