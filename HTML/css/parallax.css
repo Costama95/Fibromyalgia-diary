@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Lato", sans-serif;
 }
@@ -29,6 +30,12 @@ body, html {
 .bgimg-3 {
 	background-image: url("../w3images/maisema1.JPG");
 	min-height: 400px;
+}
+.painpicture {
+	
+	max-height: 20%;
+	max-width: 50%;
+	
 }
 .w3-wide {
 	letter-spacing: 10px;
@@ -78,6 +85,8 @@ body, html {
   cursor: pointer; /* Cursor on hover */
 }
 /*PAINSLIDER STOPS*/
+
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
