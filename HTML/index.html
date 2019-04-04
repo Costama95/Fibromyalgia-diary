@@ -48,33 +48,62 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!--FormiTesti-->
+<div class="form-style-5">
+<form>
+<fieldset>
+	<legend><span class="number">1</span> Kipu</legend>
+		<div class="slidecontainer">
+  			<input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+  			<p>Value: <span id="demo"></span></p>
+		</div>
+	<textarea name="field3" placeholder="Lisätietoa"></textarea>
+	<label for="job">Paikka?</label>
+	<select id="job" name="field4">
+	<optgroup label="Kivun paikka">
+  		<option value="olkapaa">Olkapää</option>
+  		<option value="testi1">Testi</option>
+  		<option value="testi2">Testi</option>
+  		<option value="testi3">Testi</option>
+  		<option value="testi4">Testi</option>
+  		<option value="testi5">Testi</option>
+ 		 <option value="muu">Muu</option>
+	</optgroup>
+	<optgroup label="Testi">
+  		<option value="testi6">Testi</option>
+  		<option value="testi7">Testi</option>
+  		<option value="testi8">Testi</option>
+ 		 <option value="testi9">Testi</option>
+  		<option value="testi10">Testi</option>
+ 		 <option value="muu2">Muu</option>
+	</optgroup>
+	</select>      
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Placeholder</legend>
+<textarea name="field3" placeholder="Testi"></textarea>
+</fieldset>
+<input type="submit" value="Lähetä" />
+</form>
+</div>
+	
+<!--FormiTesti loppuu-->
+
+<!-- Container (Portfolio Section)
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">KIPUSLIDERI</h3>
   <p class="w3-center"><em>Tietoa sliderista.<br> Tietoa sliderista.</em></p><br>
 </div>
 
-<!-- PAINSLIDER STARTS -->
+PAINSLIDER STARTS
 <div class="slidecontainer">
   <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
   <p>Value: <span id="demo"></span></p>
+	<div class="painpicture">
+ 		<img src="w3images/painpic.png" alt="Kuva" style="height: 500px">
+	</div>
 </div>
-
-<script>
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-</script>
-<!-- PAINSLIDER STOPS -->
-
-<div class="painpicture">
- <img src="w3images/painpic.png" alt="Kuva">
-</div>
-JONATHANILLE TESTI
+PAINSLIDER STOPS -->
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
@@ -91,6 +120,15 @@ JONATHANILLE TESTI
 </footer>
  
 <script>
+// Slidecontainer
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+  	output.innerHTML = this.value;
+}
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
