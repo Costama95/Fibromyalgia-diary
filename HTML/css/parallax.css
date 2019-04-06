@@ -9,6 +9,7 @@ body, html {
 	color: #777;
 	line-height: 1.8;
 }
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
 	background-attachment: fixed;
@@ -20,6 +21,13 @@ body, html {
 .bgimg-1 {
 	background-image: url(../w3images/maisema1.JPG);
 	min-height: 100%;
+}
+.fastnav {
+	color: black;
+	font: small-caps bold 1.2em sans-serif;
+	position: absolute;
+	bottom: 30%;
+	left: calc(50% - 255px);
 }
 /* Second image (Portfolio) */
 .bgimg-2 {
