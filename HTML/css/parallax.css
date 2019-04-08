@@ -124,7 +124,7 @@ body, html {
 }
 
 /*FormiTesti*/
-form-style-5{
+form-style-5 {
 	max-width: 500px;
 	padding: 10px 20px;
 	background: #f4f7f8;
@@ -225,13 +225,9 @@ form-style-5{
 }
 /*FormiTesti Loppuu*/
 @media only screen and (max-width: 800px) {
-	.slider {
-		width: 100%;
-	}
+	.slider,
 	.form-style-5 textarea,
-	.form-style-5 select {
-		width: 100%;
-	}
+	.form-style-5 select,
 	.form-style-5 input[type="submit"],
 	.form-style-5 input[type="button"] {
 		width: 100%;
