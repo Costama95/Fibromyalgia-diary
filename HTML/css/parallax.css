@@ -63,7 +63,7 @@ body, html {
 .slider {
   	-webkit-appearance: none;  /* Override default CSS styles */
   	appearance: none;
-  	width: 100%; /* Full-width */
+  	width: 50%; /* Full-width */
   	height: 25px; /* Specified height */
   	background: #d3d3d3;
   	outline: none; /* Remove outline */
@@ -105,6 +105,7 @@ body, html {
 	min-height: 400px;
 	}
 }
+
 /*FormiTesti*/
 form-style-5{
 	max-width: 500px;
@@ -143,7 +144,7 @@ form-style-5{
 	margin: 0;
 	outline: 0;
 	padding: 10px;
-	width: 100%;
+	width: 50%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box; 
@@ -195,7 +196,7 @@ form-style-5{
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
-	width: 100%;
+	width: 50%;
 	border: 1px solid #E1CCCC;
 	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
@@ -206,3 +207,16 @@ form-style-5{
 	background: #F9B1B2;
 }
 /*FormiTesti Loppuu*/
+@media only screen and (max-width: 800px) {
+	.slider {
+		width: 100%;
+	}
+	.form-style-5 textarea,
+	.form-style-5 select {
+		width: 100%;
+	}
+	.form-style-5 input[type="submit"],
+	.form-style-5 input[type="button"] {
+		width: 100%;
+	}
+}
