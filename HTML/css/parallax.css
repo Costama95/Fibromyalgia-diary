@@ -19,7 +19,7 @@ body, html {
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-	background-image: url(../w3images/leaves.JPG);
+	background-image: url(../w3images/honka.JPG);
 	min-height: 100%;
 }
 .fastnav {
@@ -31,7 +31,7 @@ body, html {
 }
 /* Second image (Portfolio) */
 .bgimg-2 {
-	background-image: url("../w3images/maisema1.JPG");
+	background-image: url("../w3images/honka.JPG");
 	min-height: 400px;
 }
 /* Third image (Contact) */
