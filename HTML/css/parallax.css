@@ -71,6 +71,19 @@ body, html {
 .w3-top {
 	color: #E1CCCC;
 }
+.fullpaincontainer {
+		
+  border-style:solid;
+  border-color: black;
+  width: 80%;
+  height: 800px;
+  position: relative;
+  box-shadow: 5px 5px 10px #111;
+	margin: auto;
+   border: 2px solid;
+	border-color:black;
+	background-color: white;
+}
 /*PAINSLIDER STARTS*/
 .slidecontainer {
   	text-align:left;
@@ -122,7 +135,10 @@ body, html {
 	min-height: 400px;
 	}
 }
-
+@media only screen and (max-width: 600px) {
+  /* For desktop: */
+  .fullpaincontainer {width: 100%;} 
+}
 /*FormiTesti*/
 form-style-5 {
 	max-width: 500px;
