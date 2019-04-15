@@ -72,8 +72,8 @@ body, html {
 		
   	border-style:solid;
   	border-color: black;
-  	width: 80%;
-  	height: 800px;
+  	width: 60%;
+  	height: 600px;
   	position: relative;
   	box-shadow: 5px 5px 10px #111;
 	margin: auto;
@@ -89,11 +89,11 @@ body, html {
 .slider {
   	-webkit-appearance: none;  /* Override default CSS styles */
   	appearance: none;
-  	width: 50%; /* Full-width */
+  	width: 70%; /* Full-width */
   	height: 25px; /* Specified height */
   	background: #d3d3d3;
   	outline: none; /* Remove outline */
-  	opacity: 0.6; /* Set transparency (for mouse-over effects on hover) */
+  	opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
   	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
   	transition: opacity .2s;
   	text-align:center;
@@ -106,13 +106,14 @@ body, html {
   	opacity: 1; /* Fully shown on mouse-over */
 }
 
+
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none; /* Override default look */
   	appearance: none;
   	width: 30px; /* Set a specific slider handle width */
   	height: 30px; /* Slider handle height */
-  	background: #FF6633; /* Green background */
+  	background: #ba5124; /* Green background */
   	cursor: pointer; /* Cursor on hover */
 }
 
@@ -137,12 +138,14 @@ form-style-5 {
 	border: none;
 }
 .form-style-5 legend {
-	font-size: 1.4em;
+	font-size: 2em;
 	margin-bottom: 10px;
+	color: #ba5124;
 }
 .form-style-5 label {
 	display: block;
 	margin-bottom: 8px;
+	color: #ba5124;
 }
 .form-style-5 input[type="text"],
 .form-style-5 input[type="date"],
@@ -162,7 +165,7 @@ form-style-5 {
 	margin: 0;
 	outline: 0;
 	padding: 10px;
-	width: 50%;
+	width: 70%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box; 
@@ -210,19 +213,19 @@ form-style-5 {
 	padding: 19px 39px 18px 39px;
 	color: #FFF;
 	margin: 0 auto;
-	background: #FF9933;
+	background: #ba5124;
 	font-size: 18px;
 	text-align: center;
 	font-style: normal;
 	width: 50%;
-	border: 1px solid #FF9933;
+	border: 1px solid grey;
 	border-width: 1px 1px 3px;
 	margin-bottom: 10px;
 }
 .form-style-5 input[type="submit"]:hover,
 .form-style-5 input[type="button"]:hover
 {
-	background: #FF6633;
+	background: #a44000;
 }
 /*FormiTesti Loppuu*/
 /* Turn off parallax scrolling for tablets and phones */

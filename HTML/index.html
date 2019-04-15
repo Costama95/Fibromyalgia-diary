@@ -63,38 +63,33 @@
 <div class="form-style-5" style="text-align: center">
 <form>
 <fieldset>
-	<legend><span class="number">1</span> Kipu</legend>
+	<legend>Kipu</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange">
-  			<p>Value: <span id="demo"></span></p>
+  			<!--<p>Value: <span id="demo"></span></p>-->
 		</div>
-	<textarea name="field3" placeholder="Lisätietoa"></textarea>
-	<label for="location">Paikka?</label>
+	<textarea name="field3" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
+	<label for="location">Kivun paikka</label>
 	<select id="location" name="field4">
 	<optgroup label="Kivun paikka">
+  		<option value="niska">Niska</option>
+  		<option value="ylaselka">Yläselkä</option>
+  		<option value="alaselka">Alaselkä</option>
   		<option value="olkapaa">Olkapää</option>
-  		<option value="testi1">Testi</option>
-  		<option value="testi2">Testi</option>
-  		<option value="testi3">Testi</option>
-  		<option value="testi4">Testi</option>
-  		<option value="testi5">Testi</option>
+  		<option value="kyynarpaa">Kyynärpää</option>
+  		<option value="ranne">Ranne</option>
+		<option value="kadetmuu">Kädet, muu</option>
+		<option value="kasienlihakset">Käsien lihakset</option>
+		<option value="lonkka">Lonkka</option>
+		<option value="polvi">Polvi</option>
+		<option value="nilkka">Nilkka</option>
+		<option value="jalatmuu">Jalat, muu</option>
+		<option value="jalkojenlihakset">Jalkojen lihakset</option>
  		 <option value="muu">Muu</option>
-	</optgroup>
-	<optgroup label="Testi">
-  		<option value="testi6">Testi</option>
-  		<option value="testi7">Testi</option>
-  		<option value="testi8">Testi</option>
- 		 <option value="testi9">Testi</option>
-  		<option value="testi10">Testi</option>
- 		 <option value="muu2">Muu</option>
 	</optgroup>
 	</select>      
 </fieldset>
-<fieldset>
-<legend><span class="number">2</span> Placeholder</legend>
-<textarea name="field3" placeholder="Testi"></textarea>
-</fieldset>
-<input type="submit" value="Lähetä" />
+<input type="submit" value="Tallenna" />
 </form>
 </div>
 </div>	
