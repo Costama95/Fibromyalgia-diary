@@ -1,85 +1,261 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
-<title>Historia</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/parallax.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
+  <head>
+    <title>Historia</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/parallax.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      #chartdiv {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
 
-<!-- Navbar (sit on top) -->
-<nav class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-	<a href="#historia" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HISTORIA</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+    <!-- Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <nav class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="#historia" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> HISTORIA</a
+        >
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
+        >
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-	<a href="historia.html" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</nav>
-	
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="historia">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HISTORIA</span>
-  </div>
-</div>
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="historia.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HISTORIA</a
+        >
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+    </nav>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#historia" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-	
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="historia">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
+          >HISTORIA</span
+        >
+      </div>
+    </div>
+    <div id="chartdiv"></div>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#historia" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
 
-</body>
+      // Change style of navbar on scroll
+      window.onscroll = function() {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+    <script>
+      // Themes begin
+      am4core.useTheme(am4themes_dataviz);
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      // Create chart instance
+      var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+      // Add data
+      chart.data = [
+        {
+          ax: 1,
+          ay: 0.5,
+          bx: 1,
+          by: 2.2
+        },
+        {
+          ax: 2,
+          ay: 1.3,
+          bx: 2,
+          by: 4.9
+        },
+        {
+          ax: 3,
+          ay: 2.3,
+          bx: 3,
+          by: 5.1
+        },
+        {
+          ax: 4,
+          ay: 2.8,
+          bx: 4,
+          by: 5.3
+        },
+        {
+          ax: 5,
+          ay: 3.5,
+          bx: 5,
+          by: 6.1
+        },
+        {
+          ax: 6,
+          ay: 5.1,
+          bx: 6,
+          by: 8.3
+        },
+        {
+          ax: 7,
+          ay: 6.7,
+          bx: 7,
+          by: 10.5
+        },
+        {
+          ax: 8,
+          ay: 8,
+          bx: 8,
+          by: 12.3
+        },
+        {
+          ax: 9,
+          ay: 8.9,
+          bx: 9,
+          by: 14.5
+        },
+        {
+          ax: 10,
+          ay: 9.7,
+          bx: 10,
+          by: 15
+        },
+        {
+          ax: 11,
+          ay: 10.4,
+          bx: 11,
+          by: 18.8
+        },
+        {
+          ax: 12,
+          ay: 11.7,
+          bx: 12,
+          by: 25
+        }
+      ];
+
+      // Create axes
+      var xAxis = chart.xAxes.push(new am4charts.ValueAxis());
+      xAxis.max = 12;
+      xAxis.min = 1;
+      xAxis.strictMinMax = true;
+
+      var yAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      yAxis.max = 25;
+      yAxis.min = 0;
+      yAxis.strictMinMax = true;
+
+      // Create series
+      var series1 = chart.series.push(new am4charts.LineSeries());
+      series1.dataFields.valueX = "ax";
+      series1.dataFields.valueY = "ay";
+      series1.strokeWidth = 3;
+      series1.fillOpacity = 0.2;
+
+      var series2 = chart.series.push(new am4charts.LineSeries());
+      series2.dataFields.valueX = "bx";
+      series2.dataFields.valueY = "by";
+      series2.strokeWidth = 3;
+      series2.fillOpacity = 0.2;
+      series2.baseAxis = yAxis;
+
+      // Scrollbars
+      chart.scrollbarX = new am4core.Scrollbar();
+      chart.scrollbarY = new am4core.Scrollbar();
+    </script>
+  </body>
 </html>
