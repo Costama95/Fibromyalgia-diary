@@ -66,7 +66,8 @@
 	<legend>Kipu</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange">
-  			<!--<p>Value: <span id="demo"></span></p>-->
+  			<p>Value: <span id="demo"></span></p>
+			<img id="img01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
 		</div>
 	<textarea name="field3" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 	<label for="location">Kivun paikka</label>
@@ -96,22 +97,6 @@
 </div>
 <!--FormiTesti loppuu-->
 
-<!-- Container (Portfolio Section)
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">KIPUSLIDERI</h3>
-  <p class="w3-center"><em>Tietoa sliderista.<br> Tietoa sliderista.</em></p><br>
-</div>
-
-PAINSLIDER STARTS
-<div class="slidecontainer">
-  <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
-  <p>Value: <span id="demo"></span></p>
-	<div class="painpicture">
- 		<img src="w3images/painpic.png" alt="Kuva" style="height: 500px">
-	</div>
-</div>
-PAINSLIDER STOPS -->
-
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge"></span>
@@ -140,15 +125,17 @@ var output = document.getElementById("demo");
 
 	slider.oninput = function() {
   	output.innerHTML = this.value;
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+		if(slider.value >= 1 && slider.value < 2)
+			document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			else if(slider.value >= 2 && slider.value < 3)
+				document.getElementById("img01").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+			else if(slider.value >= 3 && slider.value < 4)
+				document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			else if(slider.value >= 4 && slider.value < 5)
+				document.getElementById("img01").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+			else if(slider.value >= 5 && slider.value < 6)
+				document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+	}
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
