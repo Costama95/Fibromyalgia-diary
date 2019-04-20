@@ -37,7 +37,24 @@
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <img src="../w3images/honka.JPG" alt="logo"> <!-- THIS DOES NOT WORK!-->
-	<!-- Fastnavigation to pain etc. -->
+	
+	
+	
+	
+	
+<div class="circlemenu">
+<ul>
+<li><a href="#kipu" class="w3-bar-item w3-button"><span>Kipu</span></a></li>
+<li><a href="#vasymys" class="w3-bar-item w3-button"><span>Väsymys</span></a></li>
+<li><a href="#uni" class="w3-bar-item w3-button"><span>Uni</span></a></li>
+<li><a href="#liikunta" class="w3-bar-item w3-button"><span>Liikunta</span></a></li>
+<li><a href="#stressi" class="w3-bar-item w3-button"><span>Stressi</span></a></li>
+</ul>
+</div>	
+</div>
+</div>	
+		
+	<!-- Fastnavigation to pain etc.
 	<div class="fastnav">
     <a href="#kipu" class="w3-bar-item w3-button" onclick="toggleFunction()">KIPU</a>
 	<a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">VÄSYMYS</a>
@@ -46,7 +63,11 @@
 	<a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">STRESSI</a>
   	</div>
   </div>
-</div>
+</div>	-->
+		
+
+	
+
 <!--FormiTesti-->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="kipu">
 <div class="fullpaincontainer" >
@@ -81,7 +102,7 @@
 	</select>      
 			</fieldset>
 <fieldset>
-	<legend><span class="number">2</span> Väsymys</legend>
+	<legend><span class="number" id="vasymys">2</span> Väsymys</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange2" name="fatigue_slider">
   			<p>Value: <span id="demo2"></span></p>
@@ -90,7 +111,7 @@
 	<textarea name="fatigue_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
 <fieldset>
-	<legend><span class="number">3</span> Uni</legend>
+	<legend><span class="number" id="uni">3</span> Uni</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange3" name="sleep_slider">
   			<p>Value: <span id="demo3"></span></p>
@@ -99,7 +120,7 @@
 	<textarea name="sleep_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
 <fieldset>
-	<legend><span class="number">4</span> Liikunta</legend>
+	<legend><span class="number" id="liikunta">4</span> Liikunta</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange4" name="exercise_slider">
   			<p>Value: <span id="demo4"></span></p>
@@ -108,7 +129,7 @@
 	<textarea name="exercise_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
 <fieldset>
-	<legend><span class="number">5</span> Stressi</legend>
+	<legend><span class="number" id="stressi">5</span> Stressi</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange5" name="stress_slider">
   			<p>Value: <span id="demo5"></span></p>
