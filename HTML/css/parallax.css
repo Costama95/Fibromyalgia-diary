@@ -81,13 +81,17 @@ body, html {
   	border-style:solid;
   	border-color: black;
   	width: 60%;
-  	height: 600px;
+  	height: 2100px;
   	position: relative;
   	box-shadow: -5px 5px 10px #111;
 	margin: auto;
    	border: 2px solid;
 	background-color: white;
 	opacity: 1!important;
+}
+#img01, #img02, #img03, #img04, #img05 {
+	height: 100px;
+	width: 20%;
 }
 /*PAINSLIDER STARTS*/
 .slidecontainer {
