@@ -25,6 +25,14 @@ body, html {
 	min-height: 100%;
 }
 
+.logo {
+	min-height: 30%;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
 .fastnav {
 	color: black;
 	font: small-caps bold 1.2em serif;
@@ -75,7 +83,7 @@ body, html {
   	width: 60%;
   	height: 600px;
   	position: relative;
-  	box-shadow: 5px 5px 10px #111;
+  	box-shadow: -5px 5px 10px #111;
 	margin: auto;
    	border: 2px solid;
 	background-color: white;
@@ -171,9 +179,10 @@ form-style-5 {
 	box-sizing: border-box; 
 	background-color: #e8eeef;
 	color:#8a97a0;
-	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	/*-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(1,1,1,0.03) inset;*/
 	margin-bottom: 30px;
+	box-shadow: -1px 1px 10px #111;
 }
 .form-style-5 input[type="text"]:focus,
 .form-style-5 input[type="date"]:focus,
