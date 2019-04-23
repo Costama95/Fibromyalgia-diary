@@ -25,14 +25,8 @@ body, html {
 	min-height: 100%;
 }
 
-.logo {
-	min-height: 30%;
-    background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	
-}
-/*
+
+/* TÄSSÄ VANHA FASTNAVI, POISTA SIT LOPUKSI
 .fastnav {
 	color: black;
 	font: small-caps bold 1.2em serif;
@@ -61,7 +55,7 @@ width: 100%;
 .circlemenu ul{
 margin: 0;
 padding: 0;
-font: bold 14px Verdana;
+font: bold 20px Verdana;
 list-style-type: none;
 text-align: center;
 }
@@ -77,8 +71,8 @@ color: white;
 background:#ba5124;
 margin: 0;
 margin-right:5px;
-width:100px;
-height:100px;
+width: 150px;
+height: 150px;
 border-radius: 400px;
 transition: all .2s ease-in-out;
 -moz-border-radius: 400px;
@@ -93,7 +87,7 @@ color: white;
 }
 .circlemenu a:hover{
 background: #a44000;
-transform: scale(1.2);
+transform: scale(1.1);
 } 
  
  
@@ -314,3 +308,47 @@ form-style-5 {
 		width: 100%;
 	}
 }
+@media only screen and (max-width: 800px) {
+	.circlemenu{
+	width: 100%;
+	/*overflow: hidden;*/
+	}
+	.circlemenu ul{
+	margin: 0;
+	padding: 0;
+	font: bold 14px Verdana;
+	list-style-type: none;
+	text-align: center;
+}
+	.circlemenu li{
+	display: inline;
+	margin: 0;
+	}
+	.circlemenu li a{
+	display:inline-block;
+	text-align:center;
+	text-decoration: none;
+	color: white;
+	background:#ba5124;
+	margin: 0;
+	margin-right:5px;
+	width: 100px;
+	height: 100px;
+	border-radius: 400px;
+	transition: all .2s ease-in-out;
+	-moz-border-radius: 400px;
+	-webkit-border-radius: 400px;
+}
+.circlemenu a span{
+position:relative;
+top:40%;
+}
+.circlemenu li a:visited{
+color: white;
+}
+#fibrologo
+{
+	
+}
+
+
