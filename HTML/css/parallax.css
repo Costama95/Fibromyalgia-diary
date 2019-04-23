@@ -71,12 +71,18 @@ color: white;
 background:#ba5124;
 margin: 0;
 margin-right:5px;
+
 width: 150px;
 height: 150px;
 border-radius: 400px;
 transition: all .2s ease-in-out;
+
+width:100px;
+height:100px
 -moz-border-radius: 400px;
 -webkit-border-radius: 400px;
+border-radius: 400px;
+transition: all .2s ease-in-out;
 }
 .circlemenu a span{
 position:relative;
