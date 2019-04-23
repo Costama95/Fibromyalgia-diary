@@ -27,6 +27,7 @@ body, html {
 
 #logo {
 	max-height: 500px;
+	width: 1000px;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -81,20 +82,11 @@ text-decoration: none;
 color: white;
 background:#ba5124;
 margin: 0;
-
 margin-right:5px;
-
 width: 150px;
 height: 150px;
-border-radius: 400px;
-transition: all .2s ease-in-out;
-
-width:150px;
-height:150px;
-
 -moz-border-radius: 400px;
 -webkit-border-radius: 400px;
-border-radius: 400px;*/
 transition: all .2s ease-in-out;
 }
 .circlemenu a span{
@@ -319,11 +311,7 @@ form-style-5 {
 	#line1, #line2, #line3, #line4 {
 		width: 100%;
 	}
-	.circlemenu {
-		width: 100%;
-		height: 100%;
-	}
-	#logo {
+	.logo {
 		width: 100%;
 		height: 100%;
 	}
@@ -341,48 +329,4 @@ form-style-5 {
 		width: 100%;
 	}
 }
-/*
-@media only screen and (max-width: 800px) {
-	.circlemenu{
-	width: 100%;
-	/*overflow: hidden;*/
-	}
-	/*
-	.circlemenu ul{
-	margin: 0;
-	padding: 0;
-	font: bold 14px Verdana;
-	list-style-type: none;
-	text-align: center;
-}
-	.circlemenu li{
-	display: inline;
-	margin: 0;
-	}
-	.circlemenu li a{
-	display:inline-block;
-	text-align:center;
-	text-decoration: none;
-	color: white;
-	background:#ba5124;
-	margin: 0;
-	margin-right:5px;
-	width: 100px;
-	height: 100px;
-	border-radius: 400px;
-	transition: all .2s ease-in-out;
-	-moz-border-radius: 400px;
-	-webkit-border-radius: 400px;
-}
-.circlemenu a span{
-position:relative;
-top:40%;
-}
-.circlemenu li a:visited{
-color: white;
-}
-#fibrologo
-{
 
-}
-*/
