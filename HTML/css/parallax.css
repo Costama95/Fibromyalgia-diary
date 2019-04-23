@@ -87,6 +87,7 @@ width: 150px;
 height: 150px;
 -moz-border-radius: 400px;
 -webkit-border-radius: 400px;
+border-radius: 400px;
 transition: all .2s ease-in-out;
 }
 .circlemenu a span{
@@ -100,11 +101,6 @@ color: white;
 background: #a44000;
 transform: scale(1.1);
 }
-
-
-
-
-
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -329,4 +325,3 @@ form-style-5 {
 		width: 100%;
 	}
 }
-
