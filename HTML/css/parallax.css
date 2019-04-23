@@ -81,6 +81,7 @@ text-decoration: none;
 color: white;
 background:#ba5124;
 margin: 0;
+
 margin-right:5px;
 
 width: 150px;
@@ -90,9 +91,10 @@ transition: all .2s ease-in-out;
 
 width:150px;
 height:150px;
+
 -moz-border-radius: 400px;
 -webkit-border-radius: 400px;
-border-radius: 400px;
+border-radius: 400px;*/
 transition: all .2s ease-in-out;
 }
 .circlemenu a span{
@@ -339,11 +341,13 @@ form-style-5 {
 		width: 100%;
 	}
 }
+/*
 @media only screen and (max-width: 800px) {
 	.circlemenu{
 	width: 100%;
 	/*overflow: hidden;*/
 	}
+	/*
 	.circlemenu ul{
 	margin: 0;
 	padding: 0;
@@ -381,3 +385,4 @@ color: white;
 {
 
 }
+*/
