@@ -26,12 +26,15 @@ body, html {
 }
 
 #logo {
-	max-height: 500px;
-	width: 1000px;
+	max-height: 50em;
+	width: auto;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-
+}
+.w3-display-middle{
+	position: absolute!important;
+	top: 35%!important;
 }
 #line1, #line2, #line3, #line4 {
 	width: 100%;
@@ -60,8 +63,12 @@ body, html {
  }
  */
 
+
 .circlemenu{
 width: 100%;
+background-attachment: fixed;
+position: absolute;
+top: 55%;
 /*overflow: hidden;*/
 }
 .circlemenu ul{
@@ -69,6 +76,7 @@ margin: 0;
 padding: 0;
 font: bold 20px Verdana;
 list-style-type: none;
+
 text-align: center;
 }
 .circlemenu li{
@@ -93,14 +101,29 @@ transition: all .2s ease-in-out;
 .circlemenu a span{
 position:relative;
 top:40%;
+
 }
 .circlemenu li a:visited{
 color: white;
+
 }
 .circlemenu a:hover{
 background: #a44000!important;
 transform: scale(1.1);
+
 }
+@media only screen and (max-width: 800px){
+	.circlemenu li a {
+		width: 100px;
+	    height: 100px;
+}
+}
+@media only screen and (max-width: 800px){
+		.circlemenu ul {
+		font-size: 15px;
+		}
+}
+
 
 /* Second image (Portfolio) 
 .bgimg-2 {
