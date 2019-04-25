@@ -35,8 +35,8 @@ body, html {
 
 @media only screen and (max-width: 800px){
 		#logo {
-		max-height: 400px;
-		max-width: 400px;
+		max-height: 600px;
+		max-width: 600px;
 		}
 }
 
@@ -339,6 +339,10 @@ form-style-5 {
 	}
 	#line1, #line2, #line3, #line4, #line5 {
 		width: 100%;
+	}
+	.logo {
+		width: 100%;
+		height: 100%;
 	}
 	.bgimg-1 {
 		width: 100%;
