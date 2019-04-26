@@ -52,7 +52,7 @@ body, html {
 	top: 30%!important;
 }
 #line1, #line2, #line3, #line4, #line5 {
-	width: 100%;
+	width: 20%;
 	height: 100px;
 }
 
@@ -118,6 +118,7 @@ position:relative;
 top:40%;
 
 }
+
 .circlemenu li a:visited{
 color: white;
 
@@ -169,7 +170,7 @@ transform: scale(1.1);
 .w3-top {
 	color: #FF9933;
 	font-weight: bold;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.15);
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              	0px 8px 13px rgba(0,0,0,0.1),
              	0px 18px 23px rgba(0,0,0,0.1);
@@ -191,7 +192,8 @@ transform: scale(1.1);
 	opacity: 1!important;
 }
 #img01, #img02, #img03, #img04, #img05 {
-	height: 100px;
+	height: auto;
+	width: auto;
 	width: 20%;
 }
 /*PAINSLIDER STARTS*/
@@ -356,7 +358,7 @@ form-style-5 {
 	  width: 100%;
 	}
 	#line1, #line2, #line3, #line4, #line5 {
-		width: 100%;
+		width: 50%;
 	}
 	.bgimg-1 {
 		width: 100%;

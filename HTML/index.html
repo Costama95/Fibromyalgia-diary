@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fi">
-<title>HYTE Projekti</title>
+<title>Fibromyalgiapäiväkirja</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/parallax.css">
@@ -74,16 +74,15 @@
 <!--FormiTesti-->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="kipu">
 <div class="fullpaincontainer" >
-<img id="line1" src="http://clipart-library.com/images/pi7rEG77T.png" alt="viiva">
-<br>
 <div class="form-style-5" style="text-align: center">
+<img id="line1" src="../HTML/w3images/line1.png"" alt="viiva">
 <form><!-- method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
 <fieldset>
 	<legend><span class="number">1</span> Kipu</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange" name="pain_slider">
   			<p>Value: <span id="demo"></span></p>
-			<img id="img01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
+			<img id="img01" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 	<textarea name="pain_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 	<label for="location">Kivun paikka</label>
@@ -106,17 +105,17 @@
 	</optgroup>
 	</select>      
 			</fieldset>
-<img id="line2" src="http://clipart-library.com/images/pi7rEG77T.png" alt="viiva">
+<img id="line2" src="../HTML/w3images/line1.png" alt="viiva">
 <fieldset>
 	<legend><span class="number" id="vasymys">2</span> Väsymys</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange2" name="fatigue_slider">
   			<p>Value: <span id="demo2"></span></p>
-			<img id="img02" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
+			<img id="img02" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 	<textarea name="fatigue_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
-<img id="line3" src="http://clipart-library.com/images/pi7rEG77T.png" alt="viiva">
+<img id="line3" src="../HTML/w3images/line1.png" alt="viiva">
 <fieldset>
 	<legend><span class="number" id="uni">3</span> Uni</legend>
 		<div class="slidecontainer" style="text-align: center">
@@ -126,7 +125,7 @@
 		</div>
 	<textarea name="sleep_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
-<img id="line4" src="http://clipart-library.com/images/pi7rEG77T.png" alt="viiva">
+<img id="line4" src="../HTML/w3images/line1.png" alt="viiva">
 <fieldset>
 	<legend><span class="number" id="liikunta">4</span> Liikunta</legend>
 		<div class="slidecontainer" style="text-align: center">
@@ -136,13 +135,13 @@
 		</div>
 	<textarea name="exercise_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
-<img id="line5" src="http://clipart-library.com/images/pi7rEG77T.png" alt="viiva">
+<img id="line5" src="../HTML/w3images/line1.png" alt="viiva">
 <fieldset>
 	<legend><span class="number" id="stressi">5</span> Stressi</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange5" name="stress_slider">
   			<p>Value: <span id="demo5"></span></p>
-			<img id="img05" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
+			<img id="img05" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 			</fieldset>
 	<textarea name="stress_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
@@ -182,15 +181,15 @@ var output = document.getElementById("demo");
 	slider.oninput = function() {
   	output.innerHTML = this.value;
 		if(slider.value >= 1 && slider.value < 2)
-			document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			document.getElementById("img01").src="../HTML/w3images/face1.png";
 			else if(slider.value >= 2 && slider.value < 3)
-				document.getElementById("img01").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img01").src = src="../HTML/w3images/face2.png";
 			else if(slider.value >= 3 && slider.value < 4)
-				document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img01").src = src="../HTML/w3images/face3.png";
 			else if(slider.value >= 4 && slider.value < 5)
-				document.getElementById("img01").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img01").src = src="../HTML/w3images/face4.png";
 			else if(slider.value >= 5 && slider.value < 6)
-				document.getElementById("img01").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img01").src = src="../HTML/w3images/face5.png";
 	}
 // Slidecontainer 2
 var slider2 = document.getElementById("myRange2");
