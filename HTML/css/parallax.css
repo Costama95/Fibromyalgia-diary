@@ -41,14 +41,15 @@ body, html {
 }
 @media only screen and (max-width: 600px){
 		#logo {
-		max-height: 400px;
-		max-width: 400px;
+		max-height: 500px;
+		max-width: 500px;
 		}
 }
 
 .w3-display-middle{
 	position: absolute!important;
-	top: 35%!important;
+	margin-left:8px!important;
+	top: 30%!important;
 }
 #line1, #line2, #line3, #line4, #line5 {
 	width: 100%;
@@ -82,7 +83,7 @@ body, html {
 width: 100%;
 background-attachment: fixed;
 position: absolute;
-top: 55%;
+top: 60%;
 /*overflow: hidden;*/
 }
 .circlemenu ul{
@@ -135,10 +136,19 @@ transform: scale(1.1);
 @media only screen and (max-width: 800px){
 		.circlemenu ul {
 		font-size: 15px;
+		
 		}
 }
 
+.w3-bar-block{
+	width:100%
+}
 
+@media only screen and (max-width: 800px){
+.w3-bar-item{
+	font-size:0.9em;
+}
+}
 /* Second image (Portfolio) 
 .bgimg-2 {
 	background-image: url("../w3images/honka4.jpg");
