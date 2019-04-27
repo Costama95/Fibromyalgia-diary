@@ -45,15 +45,14 @@
 
 <!--circlemenu -->
 <div class="circlemenu">
-<ul>
-<li><a href="#line1" class="w3-bar-item w3-button"><span>Kipu</span></a></li>
-<li><a href="#line2" class="w3-bar-item w3-button"><span>Väsymys</span></a></li>
-<li><a href="#line3" class="w3-bar-item w3-button"><span>Uni</span></a></li>
-<li><a href="#line4" class="w3-bar-item w3-button"><span>Liikunta</span></a></li>
-<li><a href="#line5" class="w3-bar-item w3-button"><span>Stressi</span></a></li>
-</ul>
-		</div>	
-		
+	<ul>
+	<li><a href="#line1" class="w3-bar-item w3-button"><span>Kipu</span></a></li>
+	<li><a href="#line2" class="w3-bar-item w3-button"><span>Väsymys</span></a></li>
+	<li><a href="#line3" class="w3-bar-item w3-button"><span>Uni</span></a></li>
+	<li><a href="#line4" class="w3-bar-item w3-button"><span>Liikunta</span></a></li>
+	<li><a href="#line5" class="w3-bar-item w3-button"><span>Stressi</span></a></li>
+	</ul>
+		</div>			
 </div>
 
 		
@@ -75,13 +74,13 @@
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="kipu">
 <div class="fullpaincontainer" >
 <div class="form-style-5" style="text-align: center">
-<img id="line1" src="../HTML/w3images/line1.png"" alt="viiva">
+<img id="line1" src="../HTML/w3images/line1.png" alt="viiva">
 <form><!-- method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" -->
 <fieldset>
 	<legend><span class="number">1</span> Kipu</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange" name="pain_slider">
-  			<p>Value: <span id="demo"></span></p>
+  			<p>Aste: <span id="demo"></span></p>
 			<img id="img01" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 	<textarea name="pain_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
@@ -110,7 +109,7 @@
 	<legend><span class="number" id="vasymys">2</span> Väsymys</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange2" name="fatigue_slider">
-  			<p>Value: <span id="demo2"></span></p>
+  			<p>Aste: <span id="demo2"></span></p>
 			<img id="img02" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 	<textarea name="fatigue_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
@@ -120,9 +119,10 @@
 	<legend><span class="number" id="uni">3</span> Uni</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange3" name="sleep_slider">
-  			<p>Value: <span id="demo3"></span></p>
-			<img id="img03" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
+  			<p>Aste: <span id="demo3"></span></p>
+			<img id="img03" src="../HTML/w3images/erittainhyva.png" alt="kipuasteikko">
 		</div>
+		<br>
 	<textarea name="sleep_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
 <img id="line4" src="../HTML/w3images/line1.png" alt="viiva">
@@ -130,9 +130,10 @@
 	<legend><span class="number" id="liikunta">4</span> Liikunta</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange4" name="exercise_slider">
-  			<p>Value: <span id="demo4"></span></p>
-			<img id="img04" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1" alt="kipuasteikko">
+  			<p>Aste: <span id="demo4"></span></p>
+			<img id="img04" src="../HTML/w3images/hyvinkevyt.png"; alt="kipuasteikko">
 		</div>
+		<br>
 	<textarea name="exercise_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
 			</fieldset>
 <img id="line5" src="../HTML/w3images/line1.png" alt="viiva">
@@ -140,7 +141,7 @@
 	<legend><span class="number" id="stressi">5</span> Stressi</legend>
 		<div class="slidecontainer" style="text-align: center">
   			<input type="range" min="1" max="5" value="1" class="slider" id="myRange5" name="stress_slider">
-  			<p>Value: <span id="demo5"></span></p>
+  			<p>Aste: <span id="demo5"></span></p>
 			<img id="img05" src="../HTML/w3images/face1.png" alt="kipuasteikko">
 		</div>
 			</fieldset>
@@ -199,15 +200,15 @@ var output2 = document.getElementById("demo2");
 	slider2.oninput = function() {
   	output2.innerHTML = this.value;
 		if(slider2.value >= 1 && slider2.value < 2)
-			document.getElementById("img02").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			document.getElementById("img02").src = "../HTML/w3images/face1.png";
 			else if(slider2.value >= 2 && slider2.value < 3)
-				document.getElementById("img02").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img02").src = "../HTML/w3images/face2.png";
 			else if(slider2.value >= 3 && slider2.value < 4)
-				document.getElementById("img02").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img02").src = "../HTML/w3images/face3.png";
 			else if(slider2.value >= 4 && slider2.value < 5)
-				document.getElementById("img02").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img02").src = "../HTML/w3images/face4tired.png";
 			else if(slider2.value >= 5 && slider2.value < 6)
-				document.getElementById("img02").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img02").src = "../HTML/w3images/face5tired.png";
 	}
 // Slidecontainer 3
 var slider3 = document.getElementById("myRange3");
@@ -217,15 +218,15 @@ var output3 = document.getElementById("demo3");
 	slider3.oninput = function() {
   	output3.innerHTML = this.value;
 		if(slider3.value >= 1 && slider3.value < 2)
-			document.getElementById("img03").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			document.getElementById("img03").src = "../HTML/w3images/erittainhyva.png";
 			else if(slider3.value >= 2 && slider3.value < 3)
-				document.getElementById("img03").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img03").src = "../HTML/w3images/hyva.png";
 			else if(slider3.value >= 3 && slider3.value < 4)
-				document.getElementById("img03").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img03").src = "../HTML/w3images/keskimaarainen.png";
 			else if(slider3.value >= 4 && slider3.value < 5)
-				document.getElementById("img03").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img03").src = "../HTML/w3images/huono.png";
 			else if(slider3.value >= 5 && slider3.value < 6)
-				document.getElementById("img03").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img03").src = "../HTML/w3images/erittainhuono.png";
 	}
 // Slidecontainer 4
 var slider4 = document.getElementById("myRange4");
@@ -235,15 +236,15 @@ var output4 = document.getElementById("demo4");
 	slider4.oninput = function() {
   	output4.innerHTML = this.value;
 		if(slider4.value >= 1 && slider4.value < 2)
-			document.getElementById("img04").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			document.getElementById("img04").src = "../HTML/w3images/hyvinkevyt.png";
 			else if(slider4.value >= 2 && slider4.value < 3)
-				document.getElementById("img04").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img04").src = "../HTML/w3images/kevyt.png";
 			else if(slider4.value >= 3 && slider4.value < 4)
-				document.getElementById("img04").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img04").src = "../HTML/w3images/hiemanraskas.png";
 			else if(slider4.value >= 4 && slider4.value < 5)
-				document.getElementById("img04").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img04").src = "../HTML/w3images/raskas.png";
 			else if(slider4.value >= 5 && slider4.value < 6)
-				document.getElementById("img04").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img04").src = "../HTML/w3images/hyvinraskas.png";
 	}
 // Slidecontainer 5
 var slider5 = document.getElementById("myRange5");
@@ -253,15 +254,15 @@ var output5 = document.getElementById("demo5");
 	slider5.oninput = function() {
   	output5.innerHTML = this.value;
 		if(slider5.value >= 1 && slider5.value < 2)
-			document.getElementById("img05").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+			document.getElementById("img05").src="../HTML/w3images/face1.png";
 			else if(slider5.value >= 2 && slider5.value < 3)
-				document.getElementById("img05").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img05").src="../HTML/w3images/face2.png";
 			else if(slider5.value >= 3 && slider5.value < 4)
-				document.getElementById("img05").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img05").src="../HTML/w3images/face3.png";
 			else if(slider5.value >= 4 && slider5.value < 5)
-				document.getElementById("img05").src = "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg";
+				document.getElementById("img05").src="../HTML/w3images/face4.png";
 			else if(slider5.value >= 5 && slider5.value < 6)
-				document.getElementById("img05").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4mQsvCC_B4u1j9p_pHFVz5wku2fMCS7dT-7ccUNcp7u7WEa1";
+				document.getElementById("img05").src="../HTML/w3images/face5.png";
 	}
 
 // Change style of navbar on scroll

@@ -45,6 +45,27 @@ body, html {
 		max-width: 500px;
 		}
 }
+#logoabout {
+	max-height: 550px;
+	width: auto;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px){
+		#logoabout {
+		max-height: 500px;
+		max-width: 500px;
+		}
+}
+@media only screen and (max-width: 600px){
+		#logoabout {
+		max-height: 400px;
+		max-width: 400px;
+		}
+}
+
 
 .w3-display-middle{
 	position: absolute!important;
@@ -52,6 +73,10 @@ body, html {
 	top: 30%!important;
 }
 #line1, #line2, #line3, #line4, #line5 {
+	width: 20%;
+	height: 100px;
+}
+#lineabout1, #lineabout2, #lineabout3 {
 	width: 20%;
 	height: 100px;
 }
@@ -183,7 +208,7 @@ transform: scale(1.1);
   	border-style:solid;
   	border-color: black;
   	width: 60%;
-  	height: 2450px;
+  	height: 2700px;
   	position: relative;
   	box-shadow: -5px 5px 10px #111;
 	margin: auto;
@@ -191,10 +216,10 @@ transform: scale(1.1);
 	background-color: white;
 	opacity: 1!important;
 }
+
 #img01, #img02, #img03, #img04, #img05 {
 	height: auto;
 	width: auto;
-	width: 20%;
 }
 /*PAINSLIDER STARTS*/
 .slidecontainer {
@@ -373,4 +398,14 @@ form-style-5 {
 	.form-style-5 input[type="button"] {
 		width: 100%;
 	}
+	#img01, #img02, #img03, #img04, #img05 {
+	height: auto;
+	width: 25%;
+}
+}
+@media only screen and (max-width: 600px) {
+	#img01, #img02, #img03, #img04, #img05 {
+	height: auto;
+	width: 25%;
+}
 }
