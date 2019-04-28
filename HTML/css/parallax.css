@@ -11,6 +11,9 @@ body, html {
 	color: #777;
 	line-height: 1.8;
 }
+p {
+	text-align: center;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -63,6 +66,26 @@ body, html {
 		#logoabout {
 		max-height: 400px;
 		max-width: 400px;
+		}
+}
+#logohistory {
+    max-height: 700px;
+	width: auto;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 300px;
+}
+@media only screen and (max-width: 800px){
+		#logohistory {
+		max-height: 600px;
+		max-width: 600px;
+		}
+}
+@media only screen and (max-width: 600px){
+		#logohistory {
+		max-height: 550px;
+		max-width: 550px;
 		}
 }
 
