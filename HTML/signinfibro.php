@@ -94,57 +94,52 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
  
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Login</title>
-	<link rel="stylesheet" href="../HTML/css2/bootstrap.min.css">
-	<link rel="stylesheet" href="../HTML/css2/animate.css">
-	<link rel="stylesheet" href="../HTML/css2/login.css">
-</head>
-
-<body>
-	<div class="container">
-		<div class="logo">
-			<img id="logo" src="../HTML/w3images/Logo12n.png" alt="logo">
-		</div>
-		<section>
-			<div id="container_demo">
-				<div id="wrapper">
-					<div id="login" class="animate form">
-						<h2>Kirjaudu sisään</h2>
-						<p>Syötä käyttäjätunnus ja paina Kirjaudu -nappia.</p>
-						<form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
-							<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-								<label>Käyttäjätunnus</label>
-								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-								<span class="help-block">
-									<?php echo $username_err; ?>
-								</span>
-							</div>
-							<div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-								<label>Salasana</label>
-								<input type="password" name="password" class="form-control">
-								<span class="help-block">
-									<?php echo $password_err; ?>
-								</span>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-lg btn-link" value="Kirjaudu">
-							</div>
-							<p>Oletko vailla tunnuksia? <a href="signupfibro.php">Luo käyttäjä nyt!</a>.</p>
-						</form>
-					</div>
-		</section>
-		</div>
-		</div>
-	</div>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Login</title>
+      <link rel="stylesheet" href="../HTML/css2/bootstrap.min.css">
+      <link rel="stylesheet" href="../HTML/css2/animate.css">
+      <link rel="stylesheet" href="../HTML/css2/login.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="logo">
+            <img id="logo" src="../HTML/w3images/Logo12n.png" alt="logo">
+         </div>
+         <section>
+            <div id="container_demo">
+               <div id="wrapper">
+                  <div id="login" class="animate form">
+                     <h2>Kirjaudu sisään</h2>
+                     <p>Syötä käyttäjätunnus ja paina Kirjaudu -nappia.</p>
+                     <form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                           <label>Käyttäjätunnus</label>
+                           <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                           <span class="help-block">
+                           <?php echo $username_err; ?>
+                           </span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                           <label>Salasana</label>
+                           <input type="password" name="password" class="form-control">
+                           <span class="help-block">
+                           <?php echo $password_err; ?>
+                           </span>
+                        </div>
+                        <div class="form-group">
+                           <input type="submit" class="btn btn-primary btn-lg btn-link" value="Kirjaudu">
+                        </div>
+                        <p>Oletko vailla tunnuksia? <a href="signupfibro.php">Luo käyttäjä nyt!</a>.</p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
 </html>
-
-
-
-
 
 <!--<!DOCTYPE html>
 <html lang="en">
