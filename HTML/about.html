@@ -1,194 +1,178 @@
 <!doctype html>
 <html lang="fi">
-<title>Tietoa</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/parallax.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
-<body>
-
-<!-- Navbar (sit on top) -->
-<nav class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="inputfibro.php" class="w3-bar-item w3-button">ETUSIVU</a>	
-    <a href="inputfibro.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> OSA-ALUEET</a>
-    <a href="history.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HISTORIA</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> TIETOA</a>
-   <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">-->
-	<a href="logoutfibro.php" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> KIRJAUDU ULOS</a>
-   <!--   <i class="fa fa-search"></i>-->
-  </div>
-
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-	<a href="inputfibro.php" class="w3-bar-item w3-button" onclick="toggleFunction()">OSA-ALUEET</a>
-	<a href="history.php" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
-    <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TIETOA</a>
-	<a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">KIRJAUDU ULOS</a>
-	<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
-  </div>
-</nav>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-<div class="logo">
-		<img id="logoabout" src="w3images/tietoalogo3.png" alt="logo"> 
-</div>
-</div>
-
-<!--circlemenu -->
-<div class="circlemenu">
-<ul>
-<li><a href="#lineabout1" class="w3-bar-item w3-button"><span>Mikä?<span></a></li>
-<li><a href="#lineabout2" class="w3-bar-item w3-button"><span>Kuka?</span></a></li>
-<li><a href="#lineabout3" class="w3-bar-item w3-button"><span>Miten?</span></a></li>
-<li><a href="#contact" class="w3-bar-item w3-button "><span class= "fa fa-envelope fa-fw"></span></a></li>
-</ul>
-		</div>	
-		
-</div>
-
-	
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Tervetuloa Fibromyalgia-päiväkirjan käyttäjäksi!</h3>
-  <div style="text-align: center"><img class="w3-center" id="lineabout1" src="w3images/line1.png" alt="viiva"></div>
-  <p class="w3-center"><em>Mikä Fibromyalgiapäiväkirja on?</em></p>
-  <p>Fibromyalgiapäiväkirja on Team Fibron kehittämä apuväline ensisijaisesti fibromyalgian oireiden ja oireyhtymään vaikuttavien osa-alueiden seurantaan. Fibromyalgia on kipuoireyhtymä, jonka moninaisiin oireisiin kuuluvat muun muassa kivut lihaksissa ja sidekudoksissa, lepoa antamaton uni ja uupumus. Fibromyalgian oireet ja niiden hallintakeinot ovat hyvin yksilöllisiä. Tämän vuoksi ei ole olemassa täsmäpilleriä, tai brosyyriä, joka kertoisi: Tee tasan näin, niin voit taatusti paremmin. <br><br>
-	Tämän vuoksi tärkeitä avainsanoja ovat tiedon saaminen, sopeutuminen ja kuntoutus. Oireyhtymän hoidossa korostuvat lääkkeettömät hoitokeinot; elämänhallinta, oman oirekuvansa tunteminen ja jokaiselle yksilölliset oireiden hallinnan keinot. Avuksi astuu Fibromyalgiapäiväkirja, joka mahdollistaa juuri tämän: Kirjaat helposti, nopeasti ja luotettavasti oireitasi ja toimintojasi ja saat selkeän, yksilöllisen, omannäköisesi kuvan siitä, mikä juuri sinulle aiheuttaa lisää oireita, ja mikä niitä vähentää. Päiväkirjan graafien avulla luot itsellesi sen brosyyrin, joka kertoo sinulle: Toimi näin, niin voit paremmin.<br><br>  
-	Team Fibroon kuuluu kolme Metropolian tieto- ja viestintätekniikan opiskelijaa, joiden pääaineena on hyvinvointi- ja terveysteknologia. Fibromyalgiapäiväkirja-websovellus syntyi hyvinvointi- ja terveysteknologian projektina. </p>
-  <div style="text-align: center"><img class="w3-center" id="lineabout2" src="w3images/line1.png" alt="viiva"></div>
-  <p class="w3-center"><em>Kenelle Fibromyalgiapäiväkirja on tarkoitettu?</em></p>
-  <p>Päiväkirja on kehitetty ensisijaisesti fibromyalgiaa sairastaville sekä henkilöille, jotka epäilevät sairastavansa fibromyalgiaa. Myös oireyhtymästä kärsivän läheiset, kuten lasten vanhemmat tai omaishoitajat, voivat hyödyntää sovellusta oireyhtymän seurantaan. Sovellusta voi kuitenkin hyvin käyttää minkä tahansa oireyhtymän tai sairauden oireiden ja osa-alueiden seurantaan, jossa oireet ja osa-alueet ovat samankaltaisia. </p>
-  <div style="text-align: center"><img class="w3-center" id="lineabout3" src="w3images/line1.png" alt="viiva"></div>
-  <p class="w3-center"><em>Miten Fibromyalgiapäiväkirjaa käytetään?</em></p>
-  <p>Fibromyalgiapäiväkirjaan merkitään kahden oireen/osa-alueen tiedot. Oireita/osa-alueita ovat kipu, väsymys, uni, liikunta ja stressi. Jokaiseen oireeseen/osa-alueeseen voidaan asettaa aste liukusäätimellä. Hymynaamat ja astesanat ovat apuna asteen asettamisessa. Tämän lisäksi jokaiseen kohtaan käyttäjä voi kirjoittaa vapaasti päiväkirjamerkintöjä. Kivun kohdalla käyttäjä voi asettaa pudotusvalikosta myös kivun paikan. Historia-sivulta käyttäjä voi seurata näiden osa-alueiden tietoja ja suhteita helposti ja kätevästi viivagraafista, ja lukea päiväkirjamerkintöjään.</p>
-<!--  <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-		<p>Tähän saa tekstiä myös jos niin tahtoo</p>
-    </div>
--->
-    <!-- Hide this text on small devices 
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">4</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">1</span><br>
-    Project Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">2</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
--->	
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">OTA YHTEYTTÄ</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Team Fibro</h3>
-  <p class="w3-center"><em>Ota yhteyttä Fibromyalgiapäiväkirjan kehittäjiin, Team Fibroon!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="w3images/team1.png" class="w3-image w3-round" style="width:100%" alt="Pieni kuva">
-		
-
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Sähköposti<br>
+   <title>Tietoa</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/parallax.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+   <body>
+      <!-- Navbar (sit on top) -->
+      <nav class="w3-top">
+         <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+            </a>
+            <a href="inputfibro.php" class="w3-bar-item w3-button">ETUSIVU</a>	
+            <a href="inputfibro.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> OSA-ALUEET</a>
+            <a href="history.php" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> HISTORIA</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> TIETOA</a>
+            <a href="logoutfibro.php" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-user"></i> KIRJAUDU ULOS</a>
+         </div>
+         <!-- Navbar on small screens -->
+         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="inputfibro.php" class="w3-bar-item w3-button" onclick="toggleFunction()">OSA-ALUEET</a>
+            <a href="history.php" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
+            <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TIETOA</a>
+            <a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">KIRJAUDU ULOS</a>
+         </div>
+      </nav>
+      <!-- First Parallax Image with Logo Text -->
+      <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+         <div class="w3-display-middle" style="white-space:nowrap;">
+            <div class="logo">
+               <img id="logoabout" src="w3images/tietoalogo3.png" alt="logo"> 
+            </div>
+         </div>
+         <!--circlemenu -->
+         <div class="circlemenu">
+            <ul>
+               <li><a href="#lineabout1" class="w3-bar-item w3-button"><span>Mikä?</span></a></li>
+               <li><a href="#lineabout2" class="w3-bar-item w3-button"><span>Kuka?</span></a></li>
+               <li><a href="#lineabout3" class="w3-bar-item w3-button"><span>Miten?</span></a></li>
+               <li><a href="#contact" class="w3-bar-item w3-button "><span class= "fa fa-envelope fa-fw"></span></a></li>
+            </ul>
+         </div>
       </div>
-      <p>Tule kupposelle kahvia <i class="fa fa-coffee"></i>, tai lähetä viesti:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> LÄHETÄ VIESTI
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-</div>	
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-	
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-</body>
+      <!-- Container (About Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="about">
+         <h3 class="w3-center">Tervetuloa Fibromyalgia-päiväkirjan käyttäjäksi!</h3>
+         <div style="text-align: center"><img class="w3-center" id="lineabout1" src="w3images/line1.png" alt="viiva"></div>
+         <p class="w3-center"><em>Mikä Fibromyalgiapäiväkirja on?</em></p>
+         <p>Fibromyalgiapäiväkirja on Team Fibron kehittämä apuväline ensisijaisesti fibromyalgian oireiden ja oireyhtymään vaikuttavien osa-alueiden seurantaan. Fibromyalgia on kipuoireyhtymä, jonka moninaisiin oireisiin kuuluvat muun muassa kivut lihaksissa ja sidekudoksissa, lepoa antamaton uni ja uupumus. Fibromyalgian oireet ja niiden hallintakeinot ovat hyvin yksilöllisiä. Tämän vuoksi ei ole olemassa täsmäpilleriä, tai brosyyriä, joka kertoisi: Tee tasan näin, niin voit taatusti paremmin. <br><br>
+            Tämän vuoksi tärkeitä avainsanoja ovat tiedon saaminen, sopeutuminen ja kuntoutus. Oireyhtymän hoidossa korostuvat lääkkeettömät hoitokeinot; elämänhallinta, oman oirekuvansa tunteminen ja jokaiselle yksilölliset oireiden hallinnan keinot. Avuksi astuu Fibromyalgiapäiväkirja, joka mahdollistaa juuri tämän: Kirjaat helposti, nopeasti ja luotettavasti oireitasi ja toimintojasi ja saat selkeän, yksilöllisen, omannäköisesi kuvan siitä, mikä juuri sinulle aiheuttaa lisää oireita, ja mikä niitä vähentää. Päiväkirjan graafien avulla luot itsellesi sen brosyyrin, joka kertoo sinulle: Toimi näin, niin voit paremmin.<br><br>  
+            Team Fibroon kuuluu kolme Metropolian tieto- ja viestintätekniikan opiskelijaa, joiden pääaineena on hyvinvointi- ja terveysteknologia. Fibromyalgiapäiväkirja-websovellus syntyi hyvinvointi- ja terveysteknologian projektina. 
+         </p>
+         <div style="text-align: center"><img class="w3-center" id="lineabout2" src="w3images/line1.png" alt="viiva"></div>
+         <p class="w3-center"><em>Kenelle Fibromyalgiapäiväkirja on tarkoitettu?</em></p>
+         <p>Päiväkirja on kehitetty ensisijaisesti fibromyalgiaa sairastaville sekä henkilöille, jotka epäilevät sairastavansa fibromyalgiaa. Myös oireyhtymästä kärsivän läheiset, kuten lasten vanhemmat tai omaishoitajat, voivat hyödyntää sovellusta oireyhtymän seurantaan. Sovellusta voi kuitenkin hyvin käyttää minkä tahansa oireyhtymän tai sairauden oireiden ja osa-alueiden seurantaan, jossa oireet ja osa-alueet ovat samankaltaisia. </p>
+         <div style="text-align: center"><img class="w3-center" id="lineabout3" src="w3images/line1.png" alt="viiva"></div>
+         <p class="w3-center"><em>Miten Fibromyalgiapäiväkirjaa käytetään?</em></p>
+         <p>Fibromyalgiapäiväkirjaan merkitään kahden oireen/osa-alueen tiedot. Oireita/osa-alueita ovat kipu, väsymys, uni, liikunta ja stressi. Jokaiseen oireeseen/osa-alueeseen voidaan asettaa aste liukusäätimellä. Hymynaamat ja astesanat ovat apuna asteen asettamisessa. Tämän lisäksi jokaiseen kohtaan käyttäjä voi kirjoittaa vapaasti päiväkirjamerkintöjä. Kivun kohdalla käyttäjä voi asettaa pudotusvalikosta myös kivun paikan. Historia-sivulta käyttäjä voi seurata näiden osa-alueiden tietoja ja suhteita helposti ja kätevästi viivagraafista, ja lukea päiväkirjamerkintöjään.</p>
+         <!--  <div class="w3-row">
+            <div class="w3-col m6 w3-left w3-padding-large">
+            <p>Tähän saa tekstiä myös jos niin tahtoo</p>
+            </div>
+            -->
+         <!-- Hide this text on small devices 
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+              <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">4</span><br>
+            Partners
+            </div>
+            <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">1</span><br>
+            Project Done
+            </div>
+            <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">2</span><br>
+            Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br>
+            Meetings
+            </div>
+            </div>
+            -->	
+         <!-- Third Parallax Image with Portfolio Text -->
+         <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+               <span class="w3-xxlarge w3-text-white w3-wide">OTA YHTEYTTÄ</span>
+            </div>
+         </div>
+         <!-- Container (Contact Section) -->
+         <div class="w3-content w3-container w3-padding-64" id="contact">
+            <h3 class="w3-center">Team Fibro</h3>
+            <p class="w3-center"><em>Ota yhteyttä Fibromyalgiapäiväkirjan kehittäjiin, Team Fibroon!</em></p>
+            <div class="w3-row w3-padding-32 w3-section">
+               <div class="w3-col m4 w3-container">
+                  <img src="w3images/team1.png" class="w3-image w3-round" style="width:100%" alt="Pieni kuva">
+               </div>
+               <div class="w3-col m8 w3-panel">
+                  <div class="w3-large w3-margin-bottom">
+                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Sähköposti<br>
+                  </div>
+                  <p>Tule kupposelle kahvia <i class="fa fa-coffee"></i>, tai lähetä viesti:</p>
+                  <form action="/action_page.php" target="_blank">
+                     <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                           <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                           <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                     </div>
+                     <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                     <button class="w3-button w3-black w3-right w3-section" type="submit">
+                     <i class="fa fa-paper-plane"></i> LÄHETÄ VIESTI
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+         <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+         </div>
+         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      </footer>
+      <script>
+         // Modal Image Gallery
+         function onClick(element) {
+           document.getElementById("img01").src = element.src;
+           document.getElementById("modal01").style.display = "block";
+           var captionText = document.getElementById("caption");
+           captionText.innerHTML = element.alt;
+         }
+         
+         // Change style of navbar on scroll
+         window.onscroll = function() {myFunction()};
+         function myFunction() {
+             var navbar = document.getElementById("myNavbar");
+             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                 navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+             } else {
+                 navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+             }
+         }
+         
+         // Used to toggle the menu on small screens when clicking on the menu button
+         function toggleFunction() {
+             var x = document.getElementById("navDemo");
+             if (x.className.indexOf("w3-show") == -1) {
+                 x.className += " w3-show";
+             } else {
+                 x.className = x.className.replace(" w3-show", "");
+             }
+         }
+      </script>
+   </body>
 </html>
