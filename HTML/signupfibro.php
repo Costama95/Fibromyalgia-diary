@@ -123,25 +123,25 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 			<div id="container_demo">
 				<div id="wrapper">
 					<div id="login" class="animate form">
-						<h2>Sign Up</h2>
-						<p>Please fill this form to create an account.</p>
+						<h2>Luo käyttäjä</h2>
+						<p>Täytä seuraavat tiedot luodaksesi käyttäjän</p>
 						<form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
 							<div class="form-group <?php echo (!empty($usernameerror)) ? 'has-error' : ''; ?>">
-								<label>Username</label>
+								<label>Käyttäjätunnus</label>
 								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
 								<span class="help-block">
 									<?php echo $usernameerror; ?>
 								</span>
 							</div>
 							<div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
-								<label>Password</label>
+								<label>Salasana</label>
 								<input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
 								<span class="help-block">
 									<?php echo $passworderror; ?>
 								</span>
 							</div>
 							<div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
-								<label>Confirm Password</label>
+								<label>Vahvista salasana</label>
 								<input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
 								<span class="help-block">
 									<?php echo $passworderror; ?>
@@ -151,7 +151,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 								<input type="submit" class="btn btn-primary btn-lg btn-link" value="Submit">
 								<input type="reset" class="btn btn-default" value="Reset">
 							</div>
-							<p>Already have an account? <a href="../HTML/signinfibro.php">Login here</a>.</p>
+							<p>Onko sinulla jo käyttäjä? <a href="../HTML/signinfibro.php">Kirjaudu sisään täällä</a>.</p>
 						</form>
 					</div>
 				</div>
