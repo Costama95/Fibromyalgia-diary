@@ -148,8 +148,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 								</span>
 							</div>
 							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-lg btn-link" value="Submit">
-								<input type="reset" class="btn btn-default" value="Reset">
+								<input type="submit" class="btn btn-primary btn-lg btn-link" value="Lähetä">
+								<input type="reset" class="btn btn-default" value="Nollaus">
 							</div>
 							<p>Onko sinulla jo käyttäjä? <a href="../HTML/signinfibro.php">Kirjaudu sisään täällä</a>.</p>
 						</form>
