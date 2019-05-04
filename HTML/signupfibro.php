@@ -106,41 +106,58 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 350px; padding: 20px; }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Sign up</title>
+	<link rel="stylesheet" href="../HTML/css2/bootstrap.min.css">
+	<link rel="stylesheet" href="../HTML/css2/animate.css">
+	<link rel="stylesheet" href="../HTML/css2/login.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($usernameerror)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $usernameerror; ?></span>
-            </div>    
-            <div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-                <span class="help-block"><?php echo $passworderror; ?></span>
-            </div>
-            <div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-                <span class="help-block"><?php echo $passworderror; ?></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
-            </div>
-            <p>Already have an account? <a href="/~jonathac/inputfibro.php">Login here</a>.</p>
-        </form>
-    </div>    
+	<div class="container">
+		<div class="logo">
+			<img id="logo" src="../HTML/w3images/Logo12n.png" alt="logo">
+		</div>
+		<section>
+			<div id="container_demo">
+				<div id="wrapper">
+					<div id="login" class="animate form">
+						<h2>Sign Up</h2>
+						<p>Please fill this form to create an account.</p>
+						<form action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]); ?>" method="post">
+							<div class="form-group <?php echo (!empty($usernameerror)) ? 'has-error' : ''; ?>">
+								<label>Username</label>
+								<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+								<span class="help-block">
+									<?php echo $usernameerror; ?>
+								</span>
+							</div>
+							<div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
+								<label>Password</label>
+								<input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+								<span class="help-block">
+									<?php echo $passworderror; ?>
+								</span>
+							</div>
+							<div class="form-group <?php echo (!empty($passworderror)) ? 'has-error' : ''; ?>">
+								<label>Confirm Password</label>
+								<input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+								<span class="help-block">
+									<?php echo $passworderror; ?>
+								</span>
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-primary btn-lg btn-link" value="Submit">
+								<input type="reset" class="btn btn-default" value="Reset">
+							</div>
+							<p>Already have an account? <a href="../HTML/signinfibro.php">Login here</a>.</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </body>
 </html>
 

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+body,div,h1,h2,form,fieldset,input,textarea,p { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+h1,h2{
+	font-size:100%;
+	font-weight:normal;
+}
+section {
+	display: block;
+}
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #1d3c41;
+	overflow-y: scroll;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+#logo {
+	max-height: 600px;
+	width: 800px;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+
+}
+body{
+	background:url("../w3images/honka.JPG");
+	background-attachment:fixed;
+	background-size:cover;
+}
+#container_demo{
+	 text-align: left;
+	 padding: 0;
+	 margin: 0 auto;
+	 font-family: 'Raleway', sans-serif;
+}
+a.hiddenanchor{
+	display: none;
+}
+#wrapper{
+	width: 60%;
+	right: 0px;
+	min-height: 560px;	
+	margin: 0px auto;	
+	width: 500px;
+	position: relative;	
+}
+#wrapper a{
+	color: rgb(95, 155, 198);
+	text-decoration: underline;
+}
+#wrapper a:hover {
+	color: #AC8989;
+  	-webkit-transition: all 0.35s ease-in-out;
+  	-moz-transition: all 0.35s ease-in-out;
+  	-o-transition: all 0.35s ease-in-out;
+  	transition: all 0.35s ease-in-out;
+}
+#wrapper p{
+	margin-bottom:15px;
+}
+#wrapper p:first-child{
+	margin: 0px;
+}
+#wrapper label{
+	color: rgb(64, 92, 96);
+	position: relative;
+}
+#wrapper input:not([type="checkbox"]){
+	width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;	
+	border: 1px solid rgb(178, 178, 178);
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+#login {
+	position: absolute;
+	top: 0px;
+	width: 88%;	
+	padding: 18px 6% 60px 6%;
+	margin:0  35px;
+	background: rgb(247, 247, 247);
+	border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-radius: 5px;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+.btn:focus {
+  	outline: 0px auto -webkit-focus-ring-color;
+  	outline: none;
+}
+.btn {
+  	text-transform: uppercase;
+  	border-radius: 40px;
+  	border: none;
+}
+.btn-primary {
+  	background-color:#AC8989;
+  	color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #2E2E2E;
+    border-color: #285e8e;
+  	-webkit-transition: all 0.35s ease-in-out;
+  	-moz-transition: all 0.35s ease-in-out;
+  	-o-transition: all 0.35s ease-in-out;
+  	transition: all 0.35s ease-in-out;
+}
+.animate{
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	
+	-moz-animation-duration: 0.5s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;
+	
+	-o-animation-duration: 0.5s;
+	-o-animation-timing-function: ease;
+	-o-animation-fill-mode: both;
+	
+	-ms-animation-duration: 0.5s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;
+	
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+@media only screen and (max-width: 800px){
+		.container {
+		max-height: 100%;
+		max-width: 100%;
+		}
+@media only screen and (max-width: 800px) {
+		#container_demo {
+		max-height: 100%;
+		max-width: 100%;
+		}
+}
+@media only screen and (max-width: 800px) {
+		#wrapper {
+		max-height: 100%;
+		max-width: 100%;
+		}
+	}
+@media only screen and (max-width: 800px){
+		#logo {
+		max-height: 600px;
+		max-width: 600px;
+		}
+}
+@media only screen and (max-width: 600px){
+		#logo {
+		max-height: 500px;
+		max-width: 500px;
+		}
+}
+@media only screen and (max-width: 500px){
+		#logo {
+		max-height: 300px;
+		max-width: 300px;
+		}
+}
+@media only screen and (max-width: 400px){
+		#logo {
+		max-height: 300px;
+		max-width: 300px;
+		}
+}
+@media only screen and (max-width: 300px){
+		#logo {
+		max-height: 250px;
+		max-width: 250px;
+		}
+}
+}
+/*
