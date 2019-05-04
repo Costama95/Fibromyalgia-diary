@@ -138,7 +138,7 @@ mysqli_close($link);
             <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">OSA-ALUEET</a>
             <a href="history.php" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTORIA</a>
             <a href="about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TIETOA</a>
-            <a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">KIRJAUDU ULOS</a>
+            <a href="logoutfibro.php" class="w3-bar-item w3-button" onclick="toggleFunction()">KIRJAUDU ULOS</a>
          </div>
       </nav>
       <!-- First Parallax Image with Logo Text -->
