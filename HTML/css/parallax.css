@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body, h1, h2, h4, h5, h6 {
-	font-family: "Lato", sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 body, html {
 	height: 100%;
@@ -127,14 +127,17 @@ p, h3 {
 	margin-left:8px!important;
 	top: 30%!important;
 }
-#line1, #line2, #line3, #line4, #line5 {
+#line1, #line2, #line3, #line4, #line5, #lineabout1, #lineabout2, #lineabout3 {
 	width: 20%;
 	height: 100px;
 }
-#lineabout1, #lineabout2, #lineabout3 {
+#graphs, #diaryentries {
+	color: #ba5124;
+}
+/*#lineabout1, #lineabout2, #lineabout3 {
 	width: 20%;
 	height: 100px;
-}
+}*/
 .circlemenu{
 width: 100%;
 background-attachment: fixed;
@@ -243,6 +246,7 @@ transform: scale(1.1);
 }
 /*PAINSLIDER STARTS*/
 .slidecontainer {
+	
 }
 
 /* The painslider itself */
@@ -330,7 +334,7 @@ form-style-5 {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #e8eeef;
-	color:#8a97a0;
+	color: #495156;
 	/*-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 	box-shadow: 0 1px 0 rgba(1,1,1,0.03) inset;*/
 	margin-bottom: 30px;
@@ -429,3 +433,8 @@ form-style-5 {
 	width: 25%;
 }
 }
+.degree{
+	color: #515556;
+	font-weight: bold;
+}
+
