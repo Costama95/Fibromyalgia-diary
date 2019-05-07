@@ -20,17 +20,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    <head>
       <title>Historia</title>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="css/parallax.css" />
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-      <link
-         rel="stylesheet"
-         href="https://fonts.googleapis.com/css?family=Lato"
-         />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-         />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/parallax.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <style>
          #chartdiv {
          width: 100%;
@@ -81,17 +75,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
          <div class="w3-display-middle" style="white-space:nowrap;">
             <div class="logo">
-               <img id="logohistory" src="w3images/historialogo1n.png" alt="logo"> 
+               <img id="logohistory" src="../HTML/w3images/historialogo1n.png" alt="logo"> 
             </div>
          </div>
+         <!--</div>-->
+         <div class="circlemenu">
+            <ul>
+               <li><a href="#graphs" class="w3-bar-item w3-button"><span>Graafit</span></a></li>
+               <li><a href="#diaryentries" class="w3-bar-item w3-button"><span>Päiväkirja</span></a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="graphs" style="text-align: center">
+         <h1>Graafit</h1>
       </div>
       <div id="chartdiv"></div>
+      <div id="diaryentries" style="text-align: center">
+         <h1>Päiväkirja</h1>
+      </div>
       <table>
       <tr>
          <th>Päivä</th>
          <th>Kommentti</th>
          <th>Osa-alue</th>
       </tr>
+
   <?php
   // Table Data rendering-------------------------------------------
 
@@ -128,7 +136,6 @@ else {
   //HTML---------------------------------------
   ?>
 </table>
-</div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -238,7 +245,7 @@ series3.strokeWidth = 3;
 series3.tensionX = 0.7;
 series3.bullets.push(new am4charts.CircleBullet());
 series3.data = <?php 
-$type = "Väsynys";
+$type = "Väsymys";
 include('data.php');
 echo $out;
  ?>;

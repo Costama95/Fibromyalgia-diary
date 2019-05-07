@@ -174,8 +174,7 @@ mysqli_close($link);
                      <legend><span class="number">1</span> Kipu</legend>
                      <div class="slidecontainer" style="text-align: center">
                         <input type="range" min="1" max="5" value="1" class="slider" id="myRange" name="Kipu_slider">
-                        <p>Aste: <span id="demo"></span>
-                        </p>
+                        <div class="degree"><p>Aste: <span id="demo"></span></p></div>
                         <img id="img01" src="w3images/face1.PNG" alt="kipuasteikko">
                      </div>
                      <textarea name="Kipu_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
@@ -204,8 +203,7 @@ mysqli_close($link);
                      <legend><span class="number" id="vasymys">2</span> Väsymys</legend>
                      <div class="slidecontainer" style="text-align: center">
                         <input type="range" min="1" max="5" value="1" class="slider" id="myRange2" name="Väsymys_slider">
-                        <p>Aste: <span id="demo2"></span>
-                        </p>
+                        <div class="degree"><p>Aste: <span id="demo2"></span></p></div>
                         <img id="img02" src="w3images/face1.PNG" alt="kipuasteikko">
                      </div>
                      <textarea name="Väsymys_info" placeholder="Tähän voit kirjoittaa vapaasti päiväkirjamerkintöjä..."></textarea>
@@ -215,8 +213,7 @@ mysqli_close($link);
                      <legend><span class="number" id="uni">3</span> Uni</legend>
                      <div class="slidecontainer" style="text-align: center">
                         <input type="range" min="1" max="5" value="1" class="slider" id="myRange3" name="Uni_slider">
-                        <p>Aste: <span id="demo3"></span>
-                        </p>
+                        <div class="degree"><p>Aste: <span id="demo3"></span></p></div>
                         <img id="img03" src="w3images/erittainhyva.PNG" alt="kipuasteikko">
                      </div>
                      <br>
@@ -227,8 +224,7 @@ mysqli_close($link);
                      <legend><span class="number" id="liikunta">4</span> Liikunta</legend>
                      <div class="slidecontainer" style="text-align: center">
                         <input type="range" min="1" max="5" value="1" class="slider" id="myRange4" name="Liikunta_slider">
-                        <p>Aste: <span id="demo4"></span>
-                        </p>
+                        <div class="degree"><p>Aste: <span id="demo4"></span></p></div>
                         <img id="img04" src="w3images/hyvinkevyt.PNG" ; alt="kipuasteikko">
                      </div>
                      <br>
@@ -239,8 +235,7 @@ mysqli_close($link);
                      <legend><span class="number" id="stressi">5</span> Stressi</legend>
                      <div class="slidecontainer" style="text-align: center">
                         <input type="range" min="1" max="5" value="1" class="slider" id="myRange5" name="Stressi_slider">
-                        <p>Aste: <span id="demo5"></span>
-                        </p>
+                        <div class="degree"><p>Aste: <span id="demo5"></span></p></div>
                         <img id="img05" src="w3images/face1.PNG" alt="kipuasteikko">
                      </div>
                   </fieldset>
