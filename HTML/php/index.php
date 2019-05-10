@@ -69,7 +69,7 @@ $_SESSION['id']= $userId;
   </div>
 </nav>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- Background Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">FIBROMYALGIA-PÄIVÄKIRJA<br></span>
@@ -84,16 +84,7 @@ $_SESSION['id']= $userId;
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<!--<div class="bgimg-2 w3-display-container w3-opacity-min" id="kipu">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">KIPU</span>
-  </div>
-</div>
--->
-
-
-<!--FormiTesti-->
+<!--Form-->
 <div class="form-style-5" style="text-align: center" id="kipu">
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
 <fieldset>
@@ -132,23 +123,8 @@ $_SESSION['id']= $userId;
 </form>
 </div>
 	
-<!--FormiTesti loppuu-->
+<!--Form ends-->
 
-<!-- Container (Portfolio Section)
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">KIPUSLIDERI</h3>
-  <p class="w3-center"><em>Tietoa sliderista.<br> Tietoa sliderista.</em></p><br>
-</div>
-
-PAINSLIDER STARTS
-<div class="slidecontainer">
-  <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
-  <p>Value: <span id="demo"></span></p>
-	<div class="painpicture">
- 		<img src="w3images/painpic.png" alt="Kuva" style="height: 500px">
-	</div>
-</div>
-PAINSLIDER STOPS -->
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">

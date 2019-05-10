@@ -140,7 +140,7 @@ mysqli_close($link);
             <a href="logoutfibro.php" class="w3-bar-item w3-button" onclick="toggleFunction()">KIRJAUDU ULOS</a>
          </div>
       </nav>
-      <!-- First Parallax Image with Logo Text -->
+      <!-- Background and logo -->
       <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
          <div class="w3-display-middle" style="white-space:nowrap;">
             <div class="logo">
@@ -163,7 +163,7 @@ mysqli_close($link);
             </ul>
          </div>
       </div>
-      <!--FormiTesti-->
+      <!--Form-->
       <div class="bgimg-1 w3-display-container w3-opacity-min" id="kipu">
          <div class="fullpaincontainer">
             <div class="form-style-5" style="text-align: center">
@@ -244,7 +244,7 @@ mysqli_close($link);
             </div>
          </div>
       </div>
-      <!--FormiTesti loppuu-->
+      <!--Form ends-->
       <div class="w3-row w3-center w3-dark-grey w3-padding-16">
          <div class="w3-quarter w3-section">
             <span class="w3-xlarge"></span>
