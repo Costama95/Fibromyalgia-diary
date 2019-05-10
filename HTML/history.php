@@ -113,6 +113,8 @@ $query = "
 SELECT  timestamp, comment, type
 FROM diaryentry  
 WHERE userId = {$_SESSION["id"]} AND comment <> ''
+AND timestamp >= DATE_ADD( CURDATE(), INTERVAL '-30' DAY) 
+AND timestamp <= CURDATE()
 ORDER BY timestamp";
 $result = $link->query( $query );
 
@@ -190,7 +192,7 @@ else {
 </script>
 <script>
  // Create chart instance
-var chart = am4core.create("chartdiv", am4charts.XYChart);
+var chart = am4core.create("chartdiv1", am4charts.XYChart);
 //parse JSON
 //var pain_JSON = JSON.parse('data_pain.php');
 //console.log (pain_JSON);
@@ -219,6 +221,8 @@ series1.dataFields.dateX = "timestamp";
 series1.name = "Kipu";
 series1.strokeWidth = 3;
 series1.tensionX = 0.7;
+series1.stroke = am4core.color("#d62424");
+series1.fill = am4core.color("#d62424");
 series1.bullets.push(new am4charts.CircleBullet());
 series1.data = <?php 
 $type = "Kipu";
@@ -231,6 +235,8 @@ series2.dataFields.dateX = "timestamp";
 series2.name = "Uni";
 series2.strokeWidth = 3;
 series2.tensionX = 0.7;
+series2.stroke = am4core.color("#2280c1");
+series2.fill = am4core.color("#2280c1");
 series2.bullets.push(new am4charts.CircleBullet());
 series2.data = <?php 
 $type = "Uni";
@@ -243,6 +249,8 @@ series3.dataFields.dateX = "timestamp";
 series3.name = "Väsymys";
 series3.strokeWidth = 3;
 series3.tensionX = 0.7;
+series3.stroke = am4core.color("#7424d6");
+series3.fill = am4core.color("#7424d6");
 series3.bullets.push(new am4charts.CircleBullet());
 series3.data = <?php 
 $type = "Väsymys";
@@ -255,6 +263,8 @@ series4.dataFields.dateX = "timestamp";
 series4.name = "Stressi";
 series4.strokeWidth = 3;
 series4.tensionX = 0.7;
+series4.stroke = am4core.color("#ba711d");
+series4.fill = am4core.color("#ba711d");
 series4.bullets.push(new am4charts.CircleBullet());
 series4.data = <?php 
 $type = "Stressi";
@@ -267,37 +277,174 @@ series5.dataFields.dateX = "timestamp";
 series5.name = "Liikunta";
 series5.strokeWidth = 3;
 series5.tensionX = 0.7;
+series5.stroke = am4core.color("#40E299");
+series5.fill = am4core.color("#40E299");
 series5.bullets.push(new am4charts.CircleBullet());
 series5.data = <?php 
 $type = "Liikunta";
 include('data.php');
 echo $out;
  ?>;
-/*
-series2.data = [
-chart.dataSource.url ="data_sleep.php"
-];
-var series2 = chart.series.push(new am4charts.LineSeries());
-series2.dataFields.valueY = "level";
-series2.dataFields.categoryX = "timestamp";
-series2.name = "sleep";
-series2.strokeWidth = 3;
-series2.tensionX = 0.7;
-series2.bullets.push(new am4charts.CircleBullet());
 
-chart.dataSource.url ="data_fatigue.php";
-var series3 = chart.series.push(new am4charts.LineSeries());
-series3.dataFields.valueY = "level";
-series3.dataFields.categoryX = "timestamp";
-series3.name = "fatigue";
-series3.strokeWidth = 3;
-series3.tensionX = 0.7;
-series3.bullets.push(new am4charts.CircleBullet());
-*/
 // Add legend
 chart.legend = new am4charts.Legend();
 console.log(chart);
-    </script>
-    
+
+//create second instance of chart 14 days-------------------------------
+var chart2 = am4core.create("chartdiv2", am4charts.XYChart);
+var dateAxis = chart2.xAxes.push(new am4charts.DateAxis());
+dateAxis.renderer.minGridDistance = 50;
+dateAxis.renderer.grid.template.location = 0.5;
+dateAxis.startLocation = 0.5;
+dateAxis.endLocation = 0.5;
+
+
+// Create value axis
+var valueAxis = chart2.yAxes.push(new am4charts.ValueAxis());
+
+// Create series
+var series1 = chart2.series.push(new am4charts.LineSeries());
+series1.dataFields.valueY = "level";
+series1.dataFields.dateX = "timestamp";
+series1.name = "Kipu";
+series1.strokeWidth = 3;
+series1.tensionX = 0.7;
+series1.bullets.push(new am4charts.CircleBullet());
+series1.data = <?php 
+$type = "Kipu";
+include('data_weeks.php');
+echo $out;
+ ?>;
+var series2 = chart2.series.push(new am4charts.LineSeries());
+series2.dataFields.valueY = "level";
+series2.dataFields.dateX = "timestamp";
+series2.name = "Uni";
+series2.strokeWidth = 3;
+series2.tensionX = 0.7;
+series2.bullets.push(new am4charts.CircleBullet());
+series2.data = <?php 
+$type = "Uni";
+include('data_weeks.php');
+echo $out;
+ ?>;
+var series3 = chart2.series.push(new am4charts.LineSeries());
+series3.dataFields.valueY = "level";
+series3.dataFields.dateX = "timestamp";
+series3.name = "Väsymys";
+series3.strokeWidth = 3;
+series3.tensionX = 0.7;
+series3.bullets.push(new am4charts.CircleBullet());
+series3.data = <?php 
+$type = "Väsymys";
+include('data_weeks.php');
+echo $out;
+ ?>;
+var series4 = chart2.series.push(new am4charts.LineSeries());
+series4.dataFields.valueY = "level";
+series4.dataFields.dateX = "timestamp";
+series4.name = "Stressi";
+series4.strokeWidth = 3;
+series4.tensionX = 0.7;
+series4.bullets.push(new am4charts.CircleBullet());
+series4.data = <?php 
+$type = "Stressi";
+include('data_weeks.php');
+echo $out;
+ ?>;
+var series5 = chart2.series.push(new am4charts.LineSeries());
+series5.dataFields.valueY = "level";
+series5.dataFields.dateX = "timestamp";
+series5.name = "Liikunta";
+series5.strokeWidth = 3;
+series5.tensionX = 0.7;
+series5.bullets.push(new am4charts.CircleBullet());
+series5.data = <?php 
+$type = "Liikunta";
+include('data_weeks.php');
+echo $out;
+ ?>;
+
+// Add legend
+chart2.legend = new am4charts.Legend();
+
+
+//create third instance of chart 30 days-------------------------------
+var chart3 = am4core.create("chartdiv3", am4charts.XYChart);
+var dateAxis = chart3.xAxes.push(new am4charts.DateAxis());
+dateAxis.renderer.minGridDistance = 50;
+dateAxis.renderer.grid.template.location = 0.5;
+dateAxis.startLocation = 0.5;
+dateAxis.endLocation = 0.5;
+
+
+// Create value axis
+var valueAxis = chart3.yAxes.push(new am4charts.ValueAxis());
+
+// Create series
+var series1 = chart3.series.push(new am4charts.LineSeries());
+series1.dataFields.valueY = "level";
+series1.dataFields.dateX = "timestamp";
+series1.name = "Kipu";
+series1.strokeWidth = 3;
+series1.tensionX = 0.7;
+series1.bullets.push(new am4charts.CircleBullet());
+series1.data = <?php 
+$type = "Kipu";
+include('data_month.php');
+echo $out;
+ ?>;
+var series2 = chart3.series.push(new am4charts.LineSeries());
+series2.dataFields.valueY = "level";
+series2.dataFields.dateX = "timestamp";
+series2.name = "Uni";
+series2.strokeWidth = 3;
+series2.tensionX = 0.7;
+series2.bullets.push(new am4charts.CircleBullet());
+series2.data = <?php 
+$type = "Uni";
+include('data_month.php');
+echo $out;
+ ?>;
+var series3 = chart3.series.push(new am4charts.LineSeries());
+series3.dataFields.valueY = "level";
+series3.dataFields.dateX = "timestamp";
+series3.name = "Väsymys";
+series3.strokeWidth = 3;
+series3.tensionX = 0.7;
+series3.bullets.push(new am4charts.CircleBullet());
+series3.data = <?php 
+$type = "Väsymys";
+include('data_month.php');
+echo $out;
+ ?>;
+var series4 = chart3.series.push(new am4charts.LineSeries());
+series4.dataFields.valueY = "level";
+series4.dataFields.dateX = "timestamp";
+series4.name = "Stressi";
+series4.strokeWidth = 3;
+series4.tensionX = 0.7;
+series4.bullets.push(new am4charts.CircleBullet());
+series4.data = <?php 
+$type = "Stressi";
+include('data_month.php');
+echo $out;
+ ?>;
+var series5 = chart3.series.push(new am4charts.LineSeries());
+series5.dataFields.valueY = "level";
+series5.dataFields.dateX = "timestamp";
+series5.name = "Liikunta";
+series5.strokeWidth = 3;
+series5.tensionX = 0.7;
+series5.bullets.push(new am4charts.CircleBullet());
+series5.data = <?php 
+$type = "Liikunta";
+include('data_month.php');
+echo $out;
+ ?>;
+
+// Add legend
+chart3.legend = new am4charts.Legend();
+
+    </script>    
 </body>
 </html>
