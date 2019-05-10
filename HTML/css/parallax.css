@@ -1,10 +1,10 @@
 @charset "utf-8";
-/* CSS Document Testi Testi */
+/* CSS Document*/
 html {
   scroll-behavior: smooth;
 }
 body, h1, h2, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif, Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 body, html {
 	height: 100%;
@@ -13,7 +13,7 @@ body, html {
 }
 p, h3 {
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif, Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 .bgimg-1, .bgimg-2, .bgimg-3 {
 	background-attachment: fixed;
@@ -134,16 +134,11 @@ p, h3 {
 #graphs, #diaryentries {
 	color: #ba5124;
 }
-/*#lineabout1, #lineabout2, #lineabout3 {
-	width: 20%;
-	height: 100px;
-}*/
 .circlemenu{
 width: 100%;
 background-attachment: fixed;
 position: absolute;
 top: 60%;
-/*overflow: hidden;*/
 }
 .circlemenu ul{
 margin: 0;
@@ -393,7 +388,10 @@ form-style-5 {
 	background: #a44000;
 }
 /*FormiTesti Loppuu*/
-
+.degree{
+	color: #515556;
+	font-weight: bold;
+}
 /* Media queries */
 /* Turn off parallax scrolling for tablets and phones*/
 @media only screen and (max-device-width: 1600px) {
@@ -432,9 +430,5 @@ form-style-5 {
 	height: auto;
 	width: 25%;
 }
-}
-.degree{
-	color: #515556;
-	font-weight: bold;
 }
 

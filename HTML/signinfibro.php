@@ -101,6 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <link rel="stylesheet" href="../HTML/css2/bootstrap.min.css">
       <link rel="stylesheet" href="../HTML/css2/animate.css">
       <link rel="stylesheet" href="../HTML/css2/login.css">
+	  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
    </head>
    <body>
       <div class="container">
