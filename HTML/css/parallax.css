@@ -86,7 +86,7 @@ p, h3 {
 }
 #logohistory {
     max-height: 450px;
-	width: 450;
+	width: 450px;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -431,4 +431,3 @@ form-style-5 {
 	width: 25%;
 }
 }
-
